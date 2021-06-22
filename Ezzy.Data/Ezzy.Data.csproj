@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7579EFE1-1A01-45CE-9273-7C8140E95149}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ezzy.Data</RootNamespace>
+    <AssemblyName>Ezzy.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Profile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbo\Tables\TM_Categories.sql" />
+    <Content Include="dbo\Tables\TM_Category.sql" />
+    <Content Include="dbo\Tables\TM_EmployeeRoles.sql" />
+    <Content Include="dbo\Tables\TM_LastSavedID.sql" />
+    <Content Include="dbo\Tables\TM_Particulars.sql" />
+    <Content Include="dbo\Tables\TM_ProjectDomainCategories.sql" />
+    <Content Include="dbo\Tables\TM_ProjectDomains.sql" />
+    <Content Include="dbo\Tables\TM_ProjectDomainTypes.sql" />
+    <Content Include="dbo\Tables\TM_ProjectTechLanguages.sql" />
+    <Content Include="dbo\Tables\TM_SubCategories.sql" />
+    <Content Include="dbo\Tables\TR_Invoice_Employee_Role.sql" />
+    <Content Include="dbo\Tables\TR_Invoice_Payment.sql" />
+    <Content Include="dbo\Tables\TR_Project_Employee_Role.sql" />
+    <Content Include="dbo\Tables\TR_Quotation_Employee_Role.sql" />
+    <Content Include="dbo\Tables\TR_Quotation_Invoice.sql" />
+    <Content Include="dbo\Tables\TR_Quotation_Project.sql" />
+    <Content Include="dbo\Tables\T_Accounts.sql" />
+    <Content Include="dbo\Tables\T_ChatMessages.sql" />
+    <Content Include="dbo\Tables\T_CompanyProfile_Details.sql" />
+    <Content Include="dbo\Tables\T_Contacts.sql" />
+    <Content Include="dbo\Tables\T_Employees.sql" />
+    <Content Include="dbo\Tables\T_Employees_Divisions.sql" />
+    <Content Include="dbo\Tables\T_Employees_Leaves.sql" />
+    <Content Include="dbo\Tables\T_Employees_LeavesStatus.sql" />
+    <Content Include="dbo\Tables\T_Employees_LeavesUpdate.sql" />
+    <Content Include="dbo\Tables\T_Employees_Login.sql" />
+    <Content Include="dbo\Tables\T_Employees_Status.sql" />
+    <Content Include="dbo\Tables\T_Expenses.sql" />
+    <Content Include="dbo\Tables\T_IndexLegacy.sql" />
+    <Content Include="dbo\Tables\T_Invoices.sql" />
+    <Content Include="dbo\Tables\T_Invoices_Particulars.sql" />
+    <Content Include="dbo\Tables\T_Invoices_ParticularsCost.sql" />
+    <Content Include="dbo\Tables\T_Opportunities.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_Legals.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_Particulars.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_ParticularsCost.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_PaymentMethod.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_Status.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_Task.sql" />
+    <Content Include="dbo\Tables\T_Opportunities_Update.sql" />
+    <Content Include="dbo\Tables\T_Projects.sql" />
+    <Content Include="dbo\Tables\T_Projects_Employees.sql" />
+    <Content Include="dbo\Tables\T_Projects_Payments.sql" />
+    <Content Include="dbo\Tables\T_Projects_Status.sql" />
+    <Content Include="dbo\Tables\T_TermsAndConditions_Dynamic.sql" />
+    <Content Include="dbo\Tables\T_TermsAndConditions_Static.sql" />
+    <Content Include="dbo\Tables\T_Timesheets.sql" />
+    <Content Include="dbo\Tables\T_WorkStreams.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

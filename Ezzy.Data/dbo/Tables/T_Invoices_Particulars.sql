@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[T_Invoices_Particulars] (
+    [ID]                      UNIQUEIDENTIFIER DEFAULT (newid()) NOT NULL,
+    [CreatedDT]               DATETIME         NULL,
+    [CreatedBY]               NVARCHAR (50)    NULL,
+    [ModifiedDT]              DATETIME         NULL,
+    [ModifiedBY]              NVARCHAR (50)    NULL,
+    [IsActive]                TINYINT          NULL,
+    [InvoiceID]               NVARCHAR (50)    NULL,
+    [LinkedOpportunityNumber] NVARCHAR (50)    NULL,
+    [Particular]              NVARCHAR (200)   NULL,
+    [Description]             NVARCHAR (4000)  NULL,
+    [Cost]                    NVARCHAR (50)    NULL,
+    [Unit]                    NVARCHAR (50)    NULL,
+    [Qty]                     NVARCHAR (50)    NULL,
+    [SubTotal]                NVARCHAR (50)    NULL,
+    [IsDiscountable]          TINYINT          NULL,
+    [IsSubtotalIncluded]      TINYINT          NULL,
+    [OrderBy]                 INT              NULL,
+    [IsApplicableNextYear]    TINYINT          NULL,
+    [ApplicableStarts]        DATETIME         NULL,
+    [ApplicableEvery_Text]    INT              NULL,
+    [ApplicableEvery_Value]   NVARCHAR (100)   NULL,
+    [ApplicableEnds_Text]     INT              NULL,
+    [ApplicableEnds_Value]    NVARCHAR (100)   NULL,
+    CONSTRAINT [PK_T_Invoices_Particulars] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+

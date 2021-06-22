@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[T_Contacts] (
+    [ID]            BIGINT         IDENTITY (1, 1) NOT NULL,
+    [CreatedDT]     DATETIME       NULL,
+    [CreatedBY]     NVARCHAR (50)  NULL,
+    [ModifiedDT]    DATETIME       NULL,
+    [ModifiedBY]    NVARCHAR (50)  NULL,
+    [IsActive]      TINYINT        NULL,
+    [FirstName]     NVARCHAR (50)  NULL,
+    [MiddleName]    NVARCHAR (50)  NULL,
+    [LastName]      NVARCHAR (50)  NULL,
+    [DateOfBirth]   DATETIME       NULL,
+    [Address1]      NVARCHAR (200) NULL,
+    [Address2]      NVARCHAR (200) NULL,
+    [City]          NVARCHAR (50)  NULL,
+    [State_Core]    NVARCHAR (50)  NULL,
+    [Country_Core]  NVARCHAR (50)  NULL,
+    [EMail]         NVARCHAR (50)  NULL,
+    [PhoneNumber1]  NVARCHAR (20)  NULL,
+    [PhoneNumber2]  NVARCHAR (20)  NULL,
+    [ImageFileName] NVARCHAR (100) NULL,
+    [Prefix_Core]   NVARCHAR (50)  NULL,
+    [IsPrimary]     TINYINT        NULL,
+    [AccountID]     NVARCHAR (50)  NULL,
+    [ContactID]     NVARCHAR (50)  NULL,
+    CONSTRAINT [PK_T_Contacts] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
