@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezzy.Data", "Ezzy.Data\Ezzy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezzy.DataManager", "Ezzy.DataManager\Ezzy.DataManager.csproj", "{84AAD80B-8938-4666-8F5E-3B70EEF66754}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{B8F88E14-AB11-4FDE-B13B-E77591FF6F76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A7AA06EA-8453-4368-A04C-C1E022DFBBE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ezzy.DataManager.Tests", "Ezzy.DataManager.Tests\Ezzy.DataManager.Tests.csproj", "{6717C140-8B7A-40EF-8310-030C811CA1D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,18 @@ Global
 		{84AAD80B-8938-4666-8F5E-3B70EEF66754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84AAD80B-8938-4666-8F5E-3B70EEF66754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84AAD80B-8938-4666-8F5E-3B70EEF66754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6717C140-8B7A-40EF-8310-030C811CA1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6717C140-8B7A-40EF-8310-030C811CA1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6717C140-8B7A-40EF-8310-030C811CA1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6717C140-8B7A-40EF-8310-030C811CA1D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7579EFE1-1A01-45CE-9273-7C8140E95149} = {B8F88E14-AB11-4FDE-B13B-E77591FF6F76}
+		{84AAD80B-8938-4666-8F5E-3B70EEF66754} = {B8F88E14-AB11-4FDE-B13B-E77591FF6F76}
+		{6717C140-8B7A-40EF-8310-030C811CA1D1} = {A7AA06EA-8453-4368-A04C-C1E022DFBBE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {16908629-B286-44B3-B080-6FF0FA38D626}
