@@ -41,42 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customers\AccountDLModel.cs" />
-    <Compile Include="Customers\AccountSummaryDLModel.cs" />
-    <Compile Include="Categories\CategoryMasterDLModel.cs" />
-    <Compile Include="Employees\ClockDLModel.cs" />
-    <Compile Include="Customers\ContactDLModel.cs" />
-    <Compile Include="Payments\CostDLModel.cs" />
-    <Compile Include="Admin\DashboardCounterDLModel.cs" />
-    <Compile Include="Admin\DashboardLatestGridDLModel.cs" />
-    <Compile Include="Admin\DashboardMonthlySalesDLModel.cs" />
-    <Compile Include="Admin\DashboardRevenueChartDLModel.cs" />
-    <Compile Include="Employees\EmployeeDLModel.cs" />
-    <Compile Include="Employees\EmployeeRoleDesignationDLModel.cs" />
-    <Compile Include="Employees\EmployeeRoleDLModel.cs" />
-    <Compile Include="Payments\ExpenseDLModel.cs" />
-    <Compile Include="Payments\ExpenseSummaryDLModel.cs" />
-    <Compile Include="Invoices\InvoiceDLModel.cs" />
-    <Compile Include="Invoices\InvoiceServiceJoinDLModel.cs" />
-    <Compile Include="Invoices\InvoiceSummaryDLModel.cs" />
-    <Compile Include="Payments\PaymentDLModel.cs" />
-    <Compile Include="Projects\ProjectDLModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quotations\QuotationCounterDLModel.cs" />
-    <Compile Include="Quotations\QuotationDLModel.cs" />
-    <Compile Include="Quotations\QuotationPaymentSplitDLModel.cs" />
-    <Compile Include="Quotations\QuotationServiceJoinDLModel.cs" />
-    <Compile Include="Quotations\QuotationSummaryDLModel.cs" />
-    <Compile Include="RoleCounterDLModel.cs" />
-    <Compile Include="ServiceDLModel.cs" />
-    <Compile Include="ServiceMasterDLModel.cs" />
-    <Compile Include="Projects\StatusHistoryDLModel.cs" />
-    <Compile Include="Categories\SubCategoryMasterDLModel.cs" />
-    <Compile Include="Categories\SubCategory_Model.cs" />
-    <Compile Include="Tasks\TaskDLModel.cs" />
-    <Compile Include="Versions\VersionDLModel.cs" />
-    <Compile Include="WorkStreams\WorkStreamDLModel.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
