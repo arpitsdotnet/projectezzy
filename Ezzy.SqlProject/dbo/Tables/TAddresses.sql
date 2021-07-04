@@ -1,0 +1,23 @@
+﻿CREATE TABLE [dbo].[TAddresses]
+(
+	[ID]						INT					NOT NULL IDENTITY (1, 1),
+    [IsDelete]					BIT					NULL DEFAULT ((0)),
+    [CreateDate]				DATETIME			NULL DEFAULT (getdate()),
+    [LastModifyDate]			DATETIME			NULL,
+    [CreateByID]				BIGINT				NULL,
+    [LastModifyByID]			BIGINT				NULL,
+	[IsPrimary]					BIT					NOT NULL DEFAULT (0),
+	[AddressTypeCategoryID]		INT					NOT NULL,
+    [AddressLine1]				NVARCHAR (100)		NULL,
+	[AddressLine2]				NVARCHAR (100)		NULL,
+	[AddressLine3]				NVARCHAR (100)		NULL,
+	[City]						NVARCHAR (200)		NULL,
+	[StateID]					BIGINT				NOT NULL,
+	[CountryID]					INT					NOT NULL,
+	CONSTRAINT [PK_dbo.TAddresses] PRIMARY KEY CLUSTERED ([ID] ASC),
+    CONSTRAINT [FK_dbo.TAddresses_dbo.TUsers_CreateByID] FOREIGN KEY ([CreateByID]) REFERENCES [TUsers]([ID]),
+    CONSTRAINT [FK_dbo.TAddresses_dbo.TUsers_LastModifyByID] FOREIGN KEY ([LastModifyByID]) REFERENCES [TUsers]([ID]),
+    CONSTRAINT [FK_dbo.TAddresses_dbo.TMCategories_AddressTypeCategoryID] FOREIGN KEY ([AddressTypeCategoryID]) REFERENCES [TMCategories]([ID]),
+    CONSTRAINT [FK_dbo.TAddresses_dbo.TMStates_StateID] FOREIGN KEY ([StateID]) REFERENCES [TMStates]([ID]),
+    CONSTRAINT [FK_dbo.TAddresses_dbo.TMCountries_CountryID] FOREIGN KEY ([CountryID]) REFERENCES [TMCountries]([ID]),
+)
